@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  padding: 15px 30px;
+  justify-content: space-between;
+  border-bottom: 2px solid $gray-dark;
+
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      .login-btn {
+        @include login-btn-base(80px);
+      }
+
+      .reg-btn {
+        @include reg-btn-base(80px);
+      }
+    }
+  }
+}

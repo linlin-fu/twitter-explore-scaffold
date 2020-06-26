@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 2px solid $gray-dark;
+    border-radius: 10px;
+
+    h2 {
+      color: $white;
+      text-align: center;
+    }
+
+    .login-input {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+
+      label {
+        padding: 10px 0;
+      }
+
+      input {
+        width: 300px;
+        background-color: inherit;
+        border: 0;
+        border-bottom: 2px solid $gray-dark;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    a {
+      padding: 10px;
+      color: $primary-color;
+    }
+
+    .login-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .login-btn {
+        @include login-btn-base(300px);
+      }
+
+      .reg-btn {
+        @include reg-btn-base(300px);
+      }
+    }
+  }
+}
